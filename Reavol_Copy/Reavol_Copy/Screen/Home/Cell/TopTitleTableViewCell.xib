@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Bold.ttf">
+            <string>Inter-Bold</string>
+        </array>
+        <array key="Inter-Medium.ttf">
+            <string>Inter-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="74" id="KGk-i7-Jjw" customClass="TopTitleTableViewCell" customModule="Reavol_copy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLO-bo-d1f">
+                        <rect key="frame" x="20" y="0.0" width="315" height="74"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THỨ 6, 14 THÁNG 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPd-NL-7b5">
+                                <rect key="frame" x="0.0" y="0.0" width="315" height="13"/>
+                                <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hôm nay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TiG-ZJ-k1a">
+                                <rect key="frame" x="0.0" y="29" width="163" height="30"/>
+                                <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="im_avatar" translatesAutoresizingMaskIntoConstraints="NO" id="6h1-Xf-mHa">
+                                <rect key="frame" x="275" y="18" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="HcP-LT-9Iz"/>
+                                    <constraint firstAttribute="height" constant="40" id="qEL-3w-RLU"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2d-Y1-SqZ">
+                                <rect key="frame" x="223" y="30" width="28" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="5Q0-Tf-GYo"/>
+                                    <constraint firstAttribute="width" constant="28" id="Ju1-MY-PVL"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="ic_ring"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ock-mm-SUY">
+                                <rect key="frame" x="179" y="30" width="28" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="c2r-Jn-GRj"/>
+                                    <constraint firstAttribute="width" constant="28" id="i4y-UT-miG"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="ic_lock"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="v69-lM-Wdj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XPd-NL-7b5" firstAttribute="top" secondItem="hLO-bo-d1f" secondAttribute="top" id="14P-FA-hhL"/>
+                            <constraint firstAttribute="bottom" secondItem="ock-mm-SUY" secondAttribute="bottom" constant="16" id="GXs-uX-7mK"/>
+                            <constraint firstItem="ock-mm-SUY" firstAttribute="centerY" secondItem="TiG-ZJ-k1a" secondAttribute="centerY" id="IsO-bZ-XFo"/>
+                            <constraint firstItem="c2d-Y1-SqZ" firstAttribute="leading" secondItem="ock-mm-SUY" secondAttribute="trailing" constant="16" id="KBr-1b-M5h"/>
+                            <constraint firstItem="6h1-Xf-mHa" firstAttribute="leading" secondItem="c2d-Y1-SqZ" secondAttribute="trailing" constant="24" id="Mfg-sP-CVC"/>
+                            <constraint firstAttribute="bottom" secondItem="c2d-Y1-SqZ" secondAttribute="bottom" constant="16" id="Qzb-UG-8ki"/>
+                            <constraint firstItem="TiG-ZJ-k1a" firstAttribute="top" secondItem="XPd-NL-7b5" secondAttribute="bottom" constant="16" id="S0R-bY-NBs"/>
+                            <constraint firstAttribute="trailing" secondItem="XPd-NL-7b5" secondAttribute="trailing" id="UmG-Rk-iq9"/>
+                            <constraint firstItem="XPd-NL-7b5" firstAttribute="leading" secondItem="hLO-bo-d1f" secondAttribute="leading" id="bbZ-NX-c1a"/>
+                            <constraint firstAttribute="bottom" secondItem="6h1-Xf-mHa" secondAttribute="bottom" constant="16" id="imQ-xH-ce5"/>
+                            <constraint firstItem="ock-mm-SUY" firstAttribute="leading" secondItem="TiG-ZJ-k1a" secondAttribute="trailing" constant="16" id="n9Z-yn-pfY"/>
+                            <constraint firstItem="c2d-Y1-SqZ" firstAttribute="centerY" secondItem="TiG-ZJ-k1a" secondAttribute="centerY" id="ndd-6a-MRQ"/>
+                            <constraint firstItem="TiG-ZJ-k1a" firstAttribute="leading" secondItem="hLO-bo-d1f" secondAttribute="leading" id="p56-lb-sBR"/>
+                            <constraint firstAttribute="trailing" secondItem="6h1-Xf-mHa" secondAttribute="trailing" id="va9-1b-Gnv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="hLO-bo-d1f" secondAttribute="trailing" constant="20" id="6cH-e4-zyy"/>
+                    <constraint firstItem="hLO-bo-d1f" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Hy0-C2-Mp2"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hLO-bo-d1f" secondAttribute="bottom" id="Sn1-ae-6Rl"/>
+                    <constraint firstItem="hLO-bo-d1f" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rlw-vo-EV7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnLock" destination="ock-mm-SUY" id="Qjf-PI-VQB"/>
+                <outlet property="btnNotify" destination="c2d-Y1-SqZ" id="wDS-Ar-FIK"/>
+                <outlet property="lbCurrentDate" destination="XPd-NL-7b5" id="3P4-GV-okd"/>
+            </connections>
+            <point key="canvasLocation" x="157.24637681159422" y="70.982142857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_lock" width="19" height="24"/>
+        <image name="ic_ring" width="21" height="24"/>
+        <image name="im_avatar" width="40" height="40"/>
+    </resources>
+</document>

@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.5.0)
+  - HandyJSON (5.0.2)
+  - IQKeyboardManager (6.5.9)
+  - ObjectMapper (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - HandyJSON
+  - IQKeyboardManager
+  - ObjectMapper
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - HandyJSON
+    - IQKeyboardManager
+    - ObjectMapper
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  IQKeyboardManager: 241cc94ccabc9deb8f8bd7d12f00d73288d13ecc
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+
+PODFILE CHECKSUM: 3bb8e35e07ccaa3e669592847eca3c0a3b091b50
+
+COCOAPODS: 1.11.3

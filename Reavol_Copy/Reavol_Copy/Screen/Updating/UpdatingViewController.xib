@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpdatingViewController" customModule="Reavol_copy" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HBO-Df-sEK">
+                    <rect key="frame" x="67" y="328" width="280" height="250"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="im_updating" translatesAutoresizingMaskIntoConstraints="NO" id="Fpz-Dh-yc6">
+                            <rect key="frame" x="70" y="30" width="140" height="140"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="140" id="pfM-gr-jkr"/>
+                                <constraint firstAttribute="width" constant="140" id="z6p-LM-5LA"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đang cập nhật tính năng " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khp-Wc-Aq3">
+                            <rect key="frame" x="16" y="186" width="248" height="15"/>
+                            <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="khp-Wc-Aq3" secondAttribute="trailing" constant="16" id="3NE-vD-zk5"/>
+                        <constraint firstItem="Fpz-Dh-yc6" firstAttribute="centerY" secondItem="HBO-Df-sEK" secondAttribute="centerY" multiplier="0.8" id="83L-Z4-19A"/>
+                        <constraint firstItem="Fpz-Dh-yc6" firstAttribute="centerX" secondItem="HBO-Df-sEK" secondAttribute="centerX" id="FPN-Os-KRB"/>
+                        <constraint firstItem="khp-Wc-Aq3" firstAttribute="centerX" secondItem="Fpz-Dh-yc6" secondAttribute="centerX" id="L79-gP-Y9j"/>
+                        <constraint firstItem="khp-Wc-Aq3" firstAttribute="top" secondItem="Fpz-Dh-yc6" secondAttribute="bottom" constant="16" id="Ski-TI-dry"/>
+                        <constraint firstItem="khp-Wc-Aq3" firstAttribute="leading" secondItem="HBO-Df-sEK" secondAttribute="leading" constant="16" id="Xxb-gp-9Vn"/>
+                        <constraint firstAttribute="width" secondItem="HBO-Df-sEK" secondAttribute="height" multiplier="28:25" id="pmx-nE-KHo"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="HBO-Df-sEK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="67" id="7a1-Vw-ZnS"/>
+                <constraint firstItem="HBO-Df-sEK" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="OTs-NB-2L9"/>
+                <constraint firstItem="HBO-Df-sEK" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="PkA-UG-E92"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HBO-Df-sEK" secondAttribute="trailing" constant="67" id="Twy-BU-8Sn"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="61.607142857142854"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="im_updating" width="110" height="109"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

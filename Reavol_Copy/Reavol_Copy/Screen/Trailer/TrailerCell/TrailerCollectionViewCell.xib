@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Bold.ttf">
+            <string>Inter-Bold</string>
+        </array>
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TrailerCollectionViewCell" customModule="Reavol_copy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="417"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="417"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gao-Tb-awP">
+                        <rect key="frame" x="0.0" y="0.0" width="335" height="417"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Trailer2" translatesAutoresizingMaskIntoConstraints="NO" id="rUl-HQ-PE1">
+                                <rect key="frame" x="0.0" y="0.0" width="335" height="293.5"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TPH-cA-Y4U">
+                                <rect key="frame" x="28" y="165" width="279" height="182"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Trailer3" translatesAutoresizingMaskIntoConstraints="NO" id="D51-Qs-pUh">
+                                        <rect key="frame" x="23" y="0.0" width="233" height="182"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="D51-Qs-pUh" secondAttribute="trailing" constant="23" id="TKG-zg-o9c"/>
+                                    <constraint firstItem="D51-Qs-pUh" firstAttribute="leading" secondItem="TPH-cA-Y4U" secondAttribute="leading" constant="23" id="fzp-8Q-WFZ"/>
+                                    <constraint firstItem="D51-Qs-pUh" firstAttribute="top" secondItem="TPH-cA-Y4U" secondAttribute="top" id="jDH-zd-dtl"/>
+                                    <constraint firstAttribute="bottom" secondItem="D51-Qs-pUh" secondAttribute="bottom" id="jFq-TV-Sc3"/>
+                                    <constraint firstAttribute="width" secondItem="TPH-cA-Y4U" secondAttribute="height" multiplier="279:182" id="l9o-tZ-kex"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reavol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JLG-Yd-lyZ">
+                                <rect key="frame" x="28" y="109" width="204" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="204" id="hCp-aL-5DZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nghe sách thật dễ dàng chỉ 10 phút mỗi ngày" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tvk-YL-tDU">
+                                <rect key="frame" x="57.5" y="367" width="220" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="O1V-Nv-fPe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="14"/>
+                                <color key="textColor" name="898A8D"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JLG-Yd-lyZ" firstAttribute="leading" secondItem="gao-Tb-awP" secondAttribute="leading" constant="28" id="Cfr-7J-c9H"/>
+                            <constraint firstAttribute="trailing" secondItem="TPH-cA-Y4U" secondAttribute="trailing" constant="28" id="DWO-xf-flx"/>
+                            <constraint firstAttribute="bottom" secondItem="Tvk-YL-tDU" secondAttribute="bottom" constant="16" id="Dht-Ca-OId"/>
+                            <constraint firstAttribute="trailing" secondItem="rUl-HQ-PE1" secondAttribute="trailing" id="NCF-6a-4GT"/>
+                            <constraint firstItem="rUl-HQ-PE1" firstAttribute="top" secondItem="gao-Tb-awP" secondAttribute="top" id="RRO-s7-Kkh"/>
+                            <constraint firstItem="rUl-HQ-PE1" firstAttribute="height" secondItem="gao-Tb-awP" secondAttribute="height" multiplier="0.704" id="WXg-9g-Nj6"/>
+                            <constraint firstItem="Tvk-YL-tDU" firstAttribute="centerX" secondItem="gao-Tb-awP" secondAttribute="centerX" id="Y1u-Fk-Azl"/>
+                            <constraint firstAttribute="bottom" secondItem="TPH-cA-Y4U" secondAttribute="bottom" constant="70" id="Zzo-9q-eyT"/>
+                            <constraint firstItem="TPH-cA-Y4U" firstAttribute="leading" secondItem="gao-Tb-awP" secondAttribute="leading" constant="28" id="aJi-tN-6qp"/>
+                            <constraint firstItem="JLG-Yd-lyZ" firstAttribute="top" secondItem="gao-Tb-awP" secondAttribute="top" constant="109" id="lCw-5X-FB8"/>
+                            <constraint firstItem="TPH-cA-Y4U" firstAttribute="centerX" secondItem="gao-Tb-awP" secondAttribute="centerX" id="nIm-Dn-YGr"/>
+                            <constraint firstItem="rUl-HQ-PE1" firstAttribute="leading" secondItem="gao-Tb-awP" secondAttribute="leading" id="vq7-5L-BAL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gao-Tb-awP" secondAttribute="trailing" id="04e-L3-WV9"/>
+                <constraint firstItem="gao-Tb-awP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6Ab-vW-ixl"/>
+                <constraint firstAttribute="bottom" secondItem="gao-Tb-awP" secondAttribute="bottom" id="70h-0l-8So"/>
+                <constraint firstItem="gao-Tb-awP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="i9g-w3-Avb"/>
+            </constraints>
+            <size key="customSize" width="335" height="417"/>
+            <connections>
+                <outlet property="containerView" destination="gao-Tb-awP" id="PNf-jb-pO1"/>
+                <outlet property="iv2" destination="D51-Qs-pUh" id="2gd-vQ-ZH2"/>
+                <outlet property="ivBackGround" destination="rUl-HQ-PE1" id="Do1-bS-8GS"/>
+                <outlet property="lbReavol" destination="JLG-Yd-lyZ" id="xFK-hW-rb9"/>
+                <outlet property="lbTitle" destination="Tvk-YL-tDU" id="9Me-bY-TMl"/>
+            </connections>
+            <point key="canvasLocation" x="147.10144927536234" y="208.59375"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Trailer2" width="375" height="373"/>
+        <image name="Trailer3" width="310" height="182"/>
+        <namedColor name="898A8D">
+            <color red="0.53725490196078429" green="0.54117647058823526" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Bold.ttf">
+            <string>Inter-Bold</string>
+        </array>
+        <array key="Inter-SemiBold.ttf">
+            <string>Inter-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="demo" customModuleProvider="target">
+            <connections>
+                <outlet property="btBack" destination="teg-su-yy9" id="Pcb-RD-zlF"/>
+                <outlet property="btRegister" destination="Xfa-On-Rn2" id="SkA-QH-1m8"/>
+                <outlet property="tfConfirmPass" destination="8a2-8j-L8E" id="hAJ-Na-wiv"/>
+                <outlet property="tfEmail" destination="Afh-9m-BZS" id="mLZ-Lf-FE9"/>
+                <outlet property="tfName" destination="8ZK-5H-0I6" id="Meg-4d-F0d"/>
+                <outlet property="tfPas" destination="FY3-ir-cs4" id="Y1U-SU-0m5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewNavi" destination="WPL-zP-s7b" id="ubu-oI-2F1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPL-zP-s7b">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teg-su-yy9">
+                            <rect key="frame" x="0.0" y="0.0" width="45.5" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system"/>
+                            <connections>
+                                <action selector="Action:" destination="-1" eventType="touchUpInside" id="WvL-iy-gts"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="Jx0-1n-gAZ"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="X8H-yN-NPY"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ziI-rU-WWI">
+                    <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HjJ-zW-giP">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="763.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đăng ký" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0v-9Y-sRe">
+                                    <rect key="frame" x="28" y="38" width="95.5" height="29.5"/>
+                                    <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yJZ-rx-TZr">
+                                    <rect key="frame" x="28" y="131.5" width="358" height="416"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tên hiển thị" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALR-AL-3Kw">
+                                            <rect key="frame" x="0.0" y="0.0" width="358" height="52"/>
+                                            <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8ZK-5H-0I6">
+                                            <rect key="frame" x="0.0" y="52" width="358" height="52"/>
+                                            <color key="backgroundColor" name="grayColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="52" id="y9U-Fj-fvr"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                        </textField>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Địa chỉ email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4L-7F-nAy">
+                                            <rect key="frame" x="0.0" y="104" width="358" height="52"/>
+                                            <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Afh-9m-BZS">
+                                            <rect key="frame" x="0.0" y="156" width="358" height="52"/>
+                                            <color key="backgroundColor" name="grayColor"/>
+                                            <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                        </textField>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mật khẩu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sux-B5-erC">
+                                            <rect key="frame" x="0.0" y="208" width="358" height="52"/>
+                                            <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FY3-ir-cs4">
+                                            <rect key="frame" x="0.0" y="260" width="358" height="52"/>
+                                            <color key="backgroundColor" name="grayColor"/>
+                                            <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        </textField>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xác nhận mật khẩu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUf-eH-e7T">
+                                            <rect key="frame" x="0.0" y="312" width="358" height="52"/>
+                                            <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8a2-8j-L8E">
+                                            <rect key="frame" x="0.0" y="364" width="358" height="52"/>
+                                            <color key="backgroundColor" name="grayColor"/>
+                                            <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="8ZK-5H-0I6" firstAttribute="top" secondItem="ALR-AL-3Kw" secondAttribute="bottom" id="39I-cj-CVv"/>
+                                        <constraint firstItem="ALR-AL-3Kw" firstAttribute="leading" secondItem="yJZ-rx-TZr" secondAttribute="leading" id="D5j-n3-2qS"/>
+                                        <constraint firstItem="ALR-AL-3Kw" firstAttribute="top" secondItem="yJZ-rx-TZr" secondAttribute="top" id="QTe-RB-pWd"/>
+                                    </constraints>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfa-On-Rn2">
+                                    <rect key="frame" x="28" y="582.5" width="358" height="52"/>
+                                    <color key="backgroundColor" red="0.3803921938" green="0.74117654560000001" blue="0.47450977560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="52" id="fHY-ry-Gzg"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Đăng ký"/>
+                                    <connections>
+                                        <action selector="Action:" destination="-1" eventType="touchUpInside" id="Uyj-44-lbI"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Xfa-On-Rn2" firstAttribute="top" secondItem="yJZ-rx-TZr" secondAttribute="bottom" constant="35" id="BFl-9o-Ovv"/>
+                                <constraint firstAttribute="bottom" secondItem="yJZ-rx-TZr" secondAttribute="bottom" constant="216" id="Czc-pI-HR5"/>
+                                <constraint firstItem="yJZ-rx-TZr" firstAttribute="leading" secondItem="HjJ-zW-giP" secondAttribute="leading" constant="28" id="KAJ-AB-5Sy"/>
+                                <constraint firstItem="U0v-9Y-sRe" firstAttribute="leading" secondItem="HjJ-zW-giP" secondAttribute="leading" constant="28" id="OeQ-dd-JZV"/>
+                                <constraint firstItem="yJZ-rx-TZr" firstAttribute="top" secondItem="U0v-9Y-sRe" secondAttribute="bottom" constant="64" id="PJI-Cf-isy"/>
+                                <constraint firstAttribute="trailing" secondItem="Xfa-On-Rn2" secondAttribute="trailing" constant="28" id="aQH-MW-9Ox"/>
+                                <constraint firstAttribute="trailing" secondItem="yJZ-rx-TZr" secondAttribute="trailing" constant="28" id="im2-XJ-HIR"/>
+                                <constraint firstItem="U0v-9Y-sRe" firstAttribute="top" secondItem="HjJ-zW-giP" secondAttribute="top" constant="38" id="jMo-gH-9Rv"/>
+                                <constraint firstItem="Xfa-On-Rn2" firstAttribute="leading" secondItem="HjJ-zW-giP" secondAttribute="leading" constant="28" id="kRi-5n-V2t"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="HjJ-zW-giP" secondAttribute="trailing" id="BZC-mh-5NZ"/>
+                        <constraint firstItem="HjJ-zW-giP" firstAttribute="leading" secondItem="ziI-rU-WWI" secondAttribute="leading" id="CbP-Jc-AVL"/>
+                        <constraint firstItem="HjJ-zW-giP" firstAttribute="centerX" secondItem="ziI-rU-WWI" secondAttribute="centerX" id="Cyw-MQ-wn1"/>
+                        <constraint firstItem="HjJ-zW-giP" firstAttribute="top" secondItem="ziI-rU-WWI" secondAttribute="top" id="X78-SQ-tWi"/>
+                        <constraint firstAttribute="bottom" secondItem="HjJ-zW-giP" secondAttribute="bottom" id="eyR-TL-gwT"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ziI-rU-WWI" firstAttribute="top" secondItem="WPL-zP-s7b" secondAttribute="bottom" id="6Az-b1-ea7"/>
+                <constraint firstItem="WPL-zP-s7b" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="6IP-7X-LtP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ziI-rU-WWI" secondAttribute="bottom" id="Fp1-XQ-jIr"/>
+                <constraint firstItem="WPL-zP-s7b" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="mMa-uq-RI1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ziI-rU-WWI" secondAttribute="trailing" id="s6e-43-57j"/>
+                <constraint firstItem="WPL-zP-s7b" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vDh-km-YoV"/>
+                <constraint firstItem="ziI-rU-WWI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="x4o-Fj-prf"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.backward" catalog="system" width="128" height="98"/>
+        <namedColor name="grayColor">
+            <color red="0.96470588235294119" green="0.97254901960784312" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
